@@ -1,3 +1,4 @@
-pyvo
-matplotlib>=3.7.1
-s3fs
+astropy==5.3.1
+pyvo==1.4.1
+matplotlib==3.7.1
+s3fs==2023.6.0
