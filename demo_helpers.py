@@ -1,3 +1,11 @@
+try:
+    import pyvo
+    import s3fs
+except ImportError:
+    os.system('pip install -r requirements.txt')
+    import pyvo
+
+
 import astropy
 import astropy.coordinates as coord
 import astropy.units as u
@@ -11,17 +19,6 @@ import time
 import warnings
 warnings.filterwarnings('ignore')
 
-try:
-    import pyvo
-except ImportError:
-    os.system('pip install pyvo')
-    import pyvo
-
-try:
-    import s3fs
-except ImportError:
-    os.system('pip install s3fs')
-    
 
 if not os.path.exists('fornax-cloud-access-API'):
     os.system('git clone -b add-cloud-utils https://github.com/zoghbi-a/fornax-cloud-access-API.git')
