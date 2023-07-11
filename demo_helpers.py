@@ -1,3 +1,5 @@
+import os
+import sys
 try:
     import pyvo
     import s3fs
@@ -12,8 +14,6 @@ import astropy.units as u
 from astropy.io import fits
 import matplotlib.pyplot as plt
 import numpy as np
-import os
-import sys
 import time
 
 import warnings
